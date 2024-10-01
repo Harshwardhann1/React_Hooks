@@ -5,13 +5,14 @@ It means, when we use the useCallback Hook, it doesn't create
 Instead of creating new instance of the function, it provides
 the cached function on re-render of the component.*/
 
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import Header from "./components/Header";
 
 export const UseCallback = () => {
   const [count, setCount] = useState(0);
 
-  const newFn = () => {};
+  //   const newFn = () => {};
+  const newFn = useCallback(() => {}, []);
   return (
     <>
       <Header newFn={newFn} />

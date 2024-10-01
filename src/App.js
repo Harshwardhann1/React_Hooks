@@ -3,6 +3,7 @@ import { UseEffect } from "./UseEffect";
 import { UseState, UseState2, UseState3 } from "./UseState";
 import { UseRef, UseRef2 } from "./UseRef";
 import { UseMemo } from "./UseMemo";
+import { UseCallback } from "./UseCallback";
 
 export default function App() {
   return (
@@ -13,7 +14,8 @@ export default function App() {
       {/* <UseEffect /> */}
       {/* <UseRef /> */}
       {/* <UseRef2 /> */}
-      <UseMemo />
+      {/* <UseMemo /> */}
+      <UseCallback />
     </div>
   );
 }
